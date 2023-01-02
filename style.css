@@ -1,0 +1,133 @@
+:root{
+    --orange-clr: hsl(31, 77%, 52%);
+    --cyan-clr: hsl(184, 100%, 22%);
+    --dark-cyan-clr: hsl(179, 100%, 13%);
+    --neutral-0-clr: hsl(0, 0%, 100%);
+    --neutral-200-clr: hsl(0, 0%, 95%);
+    --neutral-1000-clr: hsl(0, 0%, 0%);
+    --transparent-clr: hsla(0, 0%, 100%, 0.75);
+    --accent-ff: 'Big Shoulders Display', cursive;
+    --neutral-ff: 'Lexend Deca', sans-serif;
+}
+
+
+/* GENERAL */
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--neutral-ff);
+    color: var(--neutral-200-clr);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARDS */
+.cards{
+    max-width: 350px;
+    margin: 5em 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card{
+    padding: 2em 3em;
+}
+
+.card p{
+    font-weight: 400;
+    color: var(--transparent-clr);
+    line-height: 1.7;
+}
+
+.vehicle-icon{
+    margin: 1em 0 0 0;
+    max-width: 70px;
+}
+
+.vehicle-type{
+    font-family: var(--accent-ff);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0.75em 0;
+    color: var(--neutral-200-clr);
+}
+
+.learn-more{
+    background-color: var(--neutral-200-clr);
+    border-style: none;
+    border: solid 2px transparent;
+    padding: 1em 2em;
+    margin: 2em 0 1em 0;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-family: var(--neutral-ff);
+    font-size: 0.9rem;
+    max-width: fit-content;
+}
+
+.learn-more:hover{
+    background-color: transparent;
+    border: solid 2px var(--neutral-200-clr);
+    color: var(--neutral-200-clr);
+    cursor: pointer;
+}
+
+.sedan-card .learn-more{
+    color: var(--orange-clr);
+}
+
+.sedan-card .learn-more:hover{
+    color: var(--neutral-200-clr);
+}
+
+.suv-card .learn-more{
+    color: var(--cyan-clr);
+}
+
+.suv-card .learn-more:hover{
+    color: var(--neutral-200-clr);
+}
+
+.luxury-card .learn-more{
+    color: var(--dark-cyan-clr);
+}
+
+.luxury-card .learn-more:hover{
+    color: var(--neutral-200-clr);
+}
+
+.sedan-card{
+    background-color: var(--orange-clr);
+}
+
+.suv-card{
+    background-color: var(--cyan-clr);
+}
+
+.luxury-card{
+    background-color: var(--dark-cyan-clr);
+}
+
+
+@media(min-width: 900px){
+    .cards{
+        display: flex;
+        max-width: 950px;
+        margin: 4em 0;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
