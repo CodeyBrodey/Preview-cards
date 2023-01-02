@@ -21,6 +21,7 @@
 body{
     font-family: var(--neutral-ff);
     color: var(--neutral-200-clr);
+    background-color: var(--neutral-200-clr);
 }
 
 main{
@@ -28,7 +29,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--neutral-200-clr);
 }
 
 /* CARDS */
