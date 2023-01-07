@@ -29,6 +29,11 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.sr-only{
+    display: none;
 }
 
 /* CARDS */
@@ -66,12 +71,14 @@ main{
     background-color: var(--neutral-200-clr);
     border-style: none;
     border: solid 2px transparent;
+    display: block;
     padding: 1em 2em;
     margin: 2em 0 1em 0;
     border-radius: 50px;
     text-transform: capitalize;
     font-family: var(--neutral-ff);
     font-size: 0.9rem;
+    text-decoration: none;
     max-width: fit-content;
 }
 
