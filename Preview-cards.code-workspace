@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/3-column-preview-card-component-main/3-column-preview-card-component-main/design"
+		},
+		{
+			"path": "../../../Downloads/3-column-preview-card-component-main/3-column-preview-card-component-main/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Preview-cards"
+	}
+}
